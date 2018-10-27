@@ -1,0 +1,90 @@
+.medical-staff {
+	padding-top: 115px;
+	padding-bottom: 0;
+	.title {
+		font-size: 32px;
+
+		@media(min-width: 768px) {
+			font-size: 45px;
+		}
+
+		line-height: 1.2;
+		color: var(--dark-75);
+		text-align: center;
+	}
+
+	.subtitle {
+		display: inline-block;
+		font-size: 16px;
+		line-height: 30px;
+		color: var(--dark);
+		text-align: center;
+		padding: 15px 0;
+
+		@media(min-width: 768px) {
+			padding: 15px 97px;
+		}
+	}
+
+	.row {
+		margin-top: 50px;
+
+		@media (min-width: 768px) {
+			margin-top: 121px;
+		}
+	}
+
+	.col-4 {
+		flex: 0 0 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+
+		&:nth-child(2) {
+			display: none;
+		}
+
+		@media (min-width:768px) {
+			flex: 0 0 50%;
+		}
+
+		@media (min-width:992px) {
+			flex: 0 0 33.33%;
+
+			&:nth-child(2) {
+				display: flex;
+			}
+		}
+
+		.col-inner {
+			display: flex;
+			align-items: center;
+
+			.img-inner {
+				display: flex;
+				align-items: center;
+				width: 75px;
+				height: 75px;
+				border-radius: 50%;
+				background-color: var(--dark-blue);
+				justify-content: center;
+				margin-right: 23px;
+				margin-bottom: 20px;
+			}
+
+			.img-inner-subtitle {
+				font-family: 'Montserrat', sans-serif;
+				font-size: 30px;
+				letter-spacing: -0.025em;
+				color: var(--dark-200);
+			}
+		}
+
+		.col-subtitle {
+			color: #6a6a6a;
+			margin-bottom: 60px;
+			@media(min-width:768px){
+				margin-bottom: 118px;
+			}
+		}
+	}
+}

@@ -1,0 +1,68 @@
+.jumbotron {
+	background-image: url(../img/Section-back.png);
+	background-size: cover;
+	background-position: unset;
+
+	@media(min-width: 768px) {
+		background-position: center;
+	}
+
+	padding-top: 182px;
+	padding-bottom: 192px;
+
+	.txt-inner {
+		display: flex;
+		flex-direction: column;
+		max-width: 592px;
+		align-items: center;
+		justify-content: center;
+
+		h1 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 500;
+			font-size: 47.69px;
+			line-height: 1.2;
+			letter-spacing: -0.025em;
+			text-align: center;
+			color: rgba(71, 71, 71, 1);
+			margin-bottom: 42px;
+		}
+
+		p {
+			text-align: center;
+			font-family: "OpenSans", sans-serif;
+			font-weight: bold;
+			font-size: 17px;
+			line-height: 30px;
+			color: var(--dark-100);
+			width: 100%;
+
+			@media (min-width: 768px) {
+				width: 77.5%;
+			}
+
+			margin-bottom: 42px;
+		}
+
+		.link-inner {
+			display: inline-block;
+			padding: 17px 37px;
+			background-color: var(--blue);
+			color: var(--white);
+			font-family: 'Lato', sans-serif;
+			font-weight: bold;
+			text-decoration: none;
+			text-transform: uppercase;
+			border-radius: 30px;
+			box-shadow: 0 12px 40px rgba(0, 1, 1, .2);
+			border: 1px solid var(--blue);
+			transition: all .2s ease-in;
+
+			&:hover {
+				background-color: transparent;
+				color: var(--blue);
+				transition: all .2s ease-in;
+			}
+		}
+	}
+}

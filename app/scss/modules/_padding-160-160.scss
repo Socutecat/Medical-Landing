@@ -1,0 +1,68 @@
+.padding-160-160 {
+	background-image: url(../img/Layer9.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	.row {
+		align-items: center;
+
+		.col-3 {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			flex-basis: 100%;
+			margin-bottom: 30px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+
+			@media(min-width:768px) {
+				flex-basis: 50%;
+			}
+
+			@media(min-width:992px) {
+				flex-basis: 25%;
+				margin-bottom: 0;
+			}
+
+			.vector-img {
+				text-align: center;
+			}
+
+			.vector-title {
+				font-family: 'Montserrat', sans-serif;
+				color: var(--white);
+				font-size: 60px;
+				line-height: 1.2;
+				letter-spacing: -0.025em;
+				text-align: center;
+				position: relative;
+				margin-bottom: 30px;
+
+				&::before {
+					position: absolute;
+					content: '';
+					left: 20px;
+					bottom: -10px;
+					width: 84px;
+					height: 5px;
+					background-color: var(--white);
+					text-align: center;
+				}
+
+			}
+
+			.vector-subtitle {
+				color: var(--white);
+				font-size: 25px;
+				letter-spacing: -0.025em;
+				text-align: center;
+				width: 165px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 500;
+			}
+		}
+	}
+}

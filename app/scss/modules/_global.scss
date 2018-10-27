@@ -1,0 +1,92 @@
+.page{
+	position: relative;
+    overflow: hidden;
+    min-height: 100vh
+}
+
+.container{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-fluid{
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.light-blue{
+    background-color: var(--light-blue);
+}
+.light-green{
+    background-color: var(--light-green);
+}
+
+.bold-green{
+    background-color: var(--bold-green)
+}
+
+.semi-green{
+    background-color: var(--semi-green);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.mt-80{
+    margin-top: -80px;
+}
+
+.padding-160-160{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    @media(min-width: 768px){
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+}
+
+.col-3{
+    flex: 0 0 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.totop-button{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	height: 0;
+	width: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+    border-bottom: 20px solid var(--black);
+    opacity: .7;
+	z-index: 1000;
+	transition: all .3s ease-in;
+	opacity: 0;
+	visibility: hidden;
+	&:hover{
+		cursor: pointer;
+		border-bottom-color: var(--dark);
+	}
+}
+
+.totop-button.show{
+	opacity: 1;
+	visibility: visible;
+}
